@@ -1,0 +1,478 @@
+.content{
+	padding: 0 20rpx;
+	background-color: $uni-bg-color-purple;
+	.title{
+		font-size: 34rpx;
+		display: flex;
+		height: 60rpx;
+		line-height: 60rpx;
+		margin: 30rpx 0 10rpx 35rpx;
+	}
+	.card {
+		border-radius: 30rpx;
+		margin: 0 auto;
+		background-color: #fff;
+		width: 624rpx;
+		padding: 48rpx 32rpx;
+		display: flex;
+		justify-content: space-between;
+	  
+		.card-function {
+			width: 172rpx;
+			height: 172rpx;
+			font-size: 28rpx;
+			background-color: $uni-topic-color;
+			border-radius: 30rpx;
+			color: #FFFFFF;
+			
+			text {
+				color: #FFFFFF;
+				position: relative;
+				top: 28rpx;
+				left: 26rpx;
+				letter-spacing: 3rpx;
+			}
+			view {
+				position: relative;
+				top: 23rpx;
+				float: right;
+				right: -19rpx;
+			}
+		}
+	}
+	.scan{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		float: left;
+		width: 235rpx;
+		height: 170rpx;
+		padding: 60rpx 0;
+		border-radius: 20rpx;
+		background-image: linear-gradient(to bottom right, rgba(190, 245, 255, 0.7),#9D95F8);
+		background-color: $uni-topic-color;
+		margin-left: 20rpx;
+		.scantips{
+			color: #FFFFFF;
+			font-weight: bold;
+			letter-spacing: 2rpx;
+			margin: auto;
+		}
+	}
+	.today_group{
+		background-color: #FFFFFF;
+		width: 355rpx;
+		height: max-content;
+		padding: 40rpx;
+		border-radius: 20rpx;
+		float: left;
+		.group_item{
+			height: 70rpx;
+			display: flex;
+			justify-content: space-between; 
+			font-weight: bold;
+			font-size: 30rpx;
+			.group_num{
+				font-weight: normal;
+			}
+		}
+	}
+	.today_data{
+		background-color: #FFFFFF;
+		border-radius: 20rpx;
+		height: 250rpx;
+		width: 688rpx;
+		margin: 0 auto;
+		padding: 30rpx 0;
+		font-size: 35rpx;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		uni-grid{
+			.grid_item{
+				.title{
+					font-weight: normal;
+					margin:0 auto;
+				}
+				.num{
+					font-size: 33rpx;
+					color: $uni-topic-dark;
+					font-weight: bold;
+					margin:0 auto; 
+				}
+			}
+		}
+	}
+	
+	//order-detail订单详情
+	.status-item{
+		width: 700rpx;
+		height: max-content;
+		border-radius: 20rpx;
+		background-color: $uni-topic-color;
+		margin: 20rpx auto;
+		font-size: 28rpx;
+		.apply{
+			padding: 30rpx;
+			.apply-tip{
+				color: #FFFFFF;
+				font-size: 40rpx;
+				margin-bottom: 20rpx;
+			}
+			.apply-reason{
+				
+			}
+			.button{
+				display: flex;
+				margin-top: 30rpx;
+				margin-left: 350rpx;
+				.reject{
+					font-size: 27rpx;
+					letter-spacing: 7rpx;
+					text-align: center;
+					width: 150rpx;
+					height: 60rpx;
+					line-height: 60rpx;
+					border-radius: 20rpx;
+				}
+				.agree{
+					font-size: 27rpx;
+					letter-spacing: 7rpx;
+					text-align: center;
+					width: 150rpx;
+					height: 60rpx;
+					line-height: 60rpx;
+					background-color: #FFFFFF;
+					font-weight: bold;
+					border-radius: 20rpx;
+				}
+			}
+			
+		}
+	}
+	.order-item{
+		width: 700rpx;
+		height: max-content;
+		border-radius: 20rpx;
+		background-color: #FFFFFF;
+		margin: 20rpx auto;
+		padding-bottom: 20rpx;
+		font-size: 28rpx;
+		.user{
+			padding: 30rpx;
+			// width: 660rpx;
+			height: max-content;
+			display: flex;
+			justify-content: space-between;
+			.userPic{
+				height: 50rpx;
+				width: 50rpx;
+				border-radius: 25rpx;
+			}
+			.userName{
+				font-size: 27rpx;
+				width: 390rpx;
+				text-align: left;
+				line-height: 50rpx;
+			}
+			.orderStatus{
+				width: 160rpx;
+				text-align: right;
+				color: $uni-topic-color;
+			}
+		}
+		.course{
+			padding: 0rpx 30rpx;
+			margin-bottom: 20rpx;
+			display: flex;
+			justify-content: space-between;
+			.coursePic{
+				width: 150rpx;
+				height: 150rpx;
+			}
+			.courseRight{
+				width: 450rpx;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				view{
+					display: flex;
+					justify-content: space-between;
+					.courseName{
+						width: 400rpx;
+						display: flex;
+					}
+					.coursePrice{
+						width: 100rpx;
+						text-align: right;
+						display: inline-block;
+					}
+				}
+				.courseNum{
+					height: 110rpx;
+					text-align: right;
+					display: inline-block;
+					font-size: 25rpx;
+					color: $uni-text-color-grey;
+				}
+			}
+		}
+		.leftright{
+			display: flex;
+			justify-content: space-between;
+			color: $uni-topic-dark;
+			padding: 10rpx 30rpx;
+			font-size: 28rpx;
+			.payCoupon{
+				color: $uni-text-color;
+				font-size: 25rpx;
+				text-align: right;
+			}
+			.payPrice{
+				color: $uni-text-color;
+				font-size: 25rpx;
+				text-align: right;
+			}
+			view{
+				font-size: 30rpx;
+			}
+		}
+	}
+	.detail{
+		width: 650rpx;
+		height: max-content;
+		border-radius: 20rpx;
+		background-color: #FFFFFF;
+		margin: 20rpx auto;
+		font-size: 28rpx;
+		padding: 25rpx;
+		text-align: right;
+		.leftright2{
+			display: flex;
+			justify-content: space-between;
+			margin: 10rpx;
+		}
+	}
+}
+
+//评价管理
+
+.option{
+	display: flex;
+	justify-content: space-between;
+	padding: 25rpx;
+	width: 750rpx;
+	height: max-content;
+	background-color: #FFFFFF;
+	position: fixed;
+	top: 0;
+	// 选项卡3
+	.option-box3{
+		width: 456rpx;
+		height: 60rpx;
+		background-color: $uni-bg-color-blue;
+		border-radius: 20rpx;
+		padding: 8rpx;
+		display: flex;
+		view{
+			width: 152rpx;
+			height: 60rpx;
+			border-radius: 20rpx;
+			font-size: 25rpx;
+			text-align: center;
+			line-height: 60rpx;
+			display: inline-block;
+		}
+		.cur{
+			background-color: #FFFFFF;
+			font-weight: bold;
+		}
+	}
+	
+	// 选项卡4
+	.option-box4{
+		width: 608rpx;
+		height: 60rpx;
+		background-color: $uni-bg-color-blue;
+		border-radius: 20rpx;
+		margin-top: -15rpx;
+		padding: 8rpx;
+		display: flex;
+		view{
+			width: 152rpx;
+			height: 60rpx;
+			border-radius: 20rpx;
+			font-size: 25rpx;
+			text-align: center;
+			line-height: 60rpx;
+			display: inline-block;
+		}
+		.cur{
+			background-color: #FFFFFF;
+			font-weight: bold;
+		}
+	}
+	picker{
+		.input{
+			height: 60rpx;
+			width: 160rpx;
+			padding: 0 15rpx;
+			display: flex;
+			justify-content: space-between;
+			border: 1rpx solid $uni-text-color-grey;
+			border-radius: 30rpx;
+			line-height: 60rpx;
+			font-size: 28rpx;
+			margin-top: 5rpx;
+			text{
+				margin-left: 10rpx;
+			}
+		}
+	}
+}
+
+// 评价列表
+.comments{
+	margin: 0 20rpx;
+	margin-top: 100rpx;
+	.comment-item{
+		padding: 30rpx 20rpx;
+		border-bottom: 1rpx solid $uni-border-color;
+		display: flex;
+		justify-content: space-between;
+		image{
+			width: 100rpx;
+			height: 100rpx;
+			border-radius: 50rpx;
+			margin: 5rpx;
+		}
+		.item-middle{
+			width: 400rpx;
+			margin: 7rpx 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.comment-pic{
+				width: 400rpx;
+				margin: 20rpx 0;
+				image{
+					width: 130rpx;
+					height: 130rpx;
+					display: flex;
+					margin: auto 0;
+					border-radius: 0rpx;
+				}
+			}
+			view{
+				display: flex;
+				justify-content: space-between;
+				.comment-username{
+					font-size: 28rpx;
+					font-weight: bold;
+				}
+				.comment-stars{
+					margin-top: 5rpx;
+				}
+			}
+		}
+		.item-right{
+			margin: 10rpx 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.reply{
+				border-radius: 15rpx;
+				background-color: $uni-topic-color;
+				width: 120rpx;
+				height: 50rpx;
+				color: $uni-bg-color-blue;
+				text-align: center;
+				line-height: 50rpx;
+			}
+			.appeal{
+				font-size: 27rpx;
+				border-radius: 15rpx;
+				width: 120rpx;
+				height: 50rpx;
+				color: $uni-text-color-grey;
+				text-align: center;
+				line-height: 50rpx;
+			}
+		}
+	}
+}
+
+//订单管理
+.orders{
+	margin-top: 140rpx;
+	.order-item{
+		width: 700rpx;
+		height: max-content;
+		border-radius: 20rpx;
+		background-color: #FFFFFF;
+		margin: 20rpx auto;
+		padding-bottom: 20rpx;
+		.user{
+			padding: 30rpx;
+			// width: 660rpx;
+			height: max-content;
+			display: flex;
+			justify-content: space-between;
+			.userPic{
+				height: 50rpx;
+				width: 50rpx;
+				border-radius: 25rpx;
+			}
+			.userName{
+				font-size: 27rpx;
+				width: 390rpx;
+				text-align: left;
+				line-height: 50rpx;
+			}
+			.orderStatus{
+				width: 160rpx;
+				text-align: right;
+				color: $uni-topic-color;
+			}
+		}
+		.course{
+			padding: 0rpx 30rpx;
+			display: flex;
+			justify-content: space-between;
+			.coursePic{
+				width: 150rpx;
+				height: 150rpx;
+			}
+			.courseRight{
+				width: 450rpx;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				view{
+					display: flex;
+					justify-content: space-between;
+					.courseName{
+						width: 400rpx;
+						display: flex;
+					}
+					.coursePrice{
+						width: 100rpx;
+						text-align: right;
+						display: inline-block;
+					}
+				}
+				.courseNum{
+					height: 110rpx;
+					text-align: right;
+					display: inline-block;
+					font-size: 25rpx;
+					color: $uni-text-color-grey;
+				}
+			}
+		}
+		.payPrice{
+			padding: 5rpx 30rpx;
+			text-align: right;
+		}
+	}
+}

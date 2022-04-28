@@ -1,0 +1,76 @@
+.content{
+	padding: 20rpx;
+}
+
+.swiper-box{
+	width: 700rpx;
+	height: 300rpx;
+	margin: 0 auto;
+	
+	swiper-item{
+		border-radius: 30rpx;
+		background-color: #007AFF;
+		image{
+			width: 700rpx;
+		}
+	}
+}
+.at-item{
+	width: 688rpx;
+	height: 370rpx;
+	margin: 0 auto 50rpx auto;
+	border-radius: 20rpx;
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+	box-shadow: 0 0 20rpx 1rpx #51515130;
+	.at-img{
+		width: 688rpx;
+		height: 242rpx;
+		border-radius: 20rpx 20rpx 0 0;
+	}
+	.at-iteminfo{
+		display: flex;
+		justify-content: space-between;
+		.left{
+			height: 80rpx;
+			width: 450rpx;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: 25rpx 30rpx;
+			.at-name{
+				font-size: 30rpx;
+				font-weight: bold;
+			}
+			.at-info{
+				font-size: 23rpx;
+				color: $uni-text-color-grey;
+			}
+		}
+		.bt_invite{
+			background-color: $uni-topic-color;
+			margin: auto 20rpx;
+			color: #FFFFFF;
+			width: 170rpx;
+			height: 60rpx;
+			border-radius: 30rpx;
+			text-align: center;
+			line-height: 60rpx;
+			font-size: 25rpx;
+			font-weight: bold;
+		}
+	}
+}
+
+.create-bottom{
+	font-size: 27rpx;
+	width: max-content;
+	margin: -10rpx auto 20rpx auto;
+	display: flex;
+	navigator{
+		color: $uni-topic-dark;
+	}
+}

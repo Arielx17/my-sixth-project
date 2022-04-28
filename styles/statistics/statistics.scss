@@ -1,0 +1,125 @@
+.content{
+	padding: 20rpx;
+	.title1 {
+		font-size: 34rpx;
+		display: flex;
+		height: 60rpx;
+		line-height: 60rpx;
+		margin: 10rpx 0 10rpx 35rpx;
+		font-weight: bold;
+		
+	}
+	.title {
+		font-size: 34rpx;
+		display: flex;
+		height: 60rpx;
+		line-height: 60rpx;
+		margin: 30rpx 0 10rpx 35rpx;
+	}
+	.today_data{
+		background-color: #FFFFFF;
+		border-radius: 20rpx;
+		height: max-content;
+		width: 688rpx;
+		margin: auto;
+		font-size: 35rpx;
+		uni-grid{
+			
+			.grid_item{
+				height: 100rpx;
+				padding: 25rpx 0;
+				border-radius: 20rpx;
+				.title{
+					font-weight: normal;
+					margin:auto;
+				}
+				.num{
+					font-size: 33rpx;
+					color: $uni-topic-dark;
+					font-weight: bold;
+					margin:auto;
+				}
+			}
+			.grid_item_recommend{
+				background-color: $uni-topic-color;
+				height: 100rpx;
+				padding: 25rpx 0;
+				border-radius: 20rpx;
+				.title{
+					font-weight: normal;
+					margin: auto;
+					color: #FFFFFF;
+				}
+				.num{
+					font-size: 33rpx;
+					color: $uni-bg-color-blue;
+					font-weight: bold;
+					margin: auto;
+				}
+			}
+		}
+	}
+
+	.card {
+		border-radius: 30rpx;
+		margin: 0 auto;
+		background-color: #fff;
+		width: 648rpx;
+		padding: 30rpx 20rpx;
+		.option{
+			display: flex;
+			justify-content: space-between;
+			// 选项卡3
+			.option-box3{
+				width: 456rpx;
+				height: 60rpx;
+				background-color: $uni-bg-color-blue;
+				border-radius: 20rpx;
+				padding: 8rpx;
+				display: flex;
+				
+				view{
+					width: 152rpx;
+					height: 60rpx;
+					border-radius: 20rpx;
+					font-size: 25rpx;
+					text-align: center;
+					line-height: 60rpx;
+					display: inline-block;
+				}
+				.cur{
+					background-color: #FFFFFF;
+					font-weight: bold;
+				}
+			}
+			picker{
+				.input{
+					height: 60rpx;
+					width: 130rpx;
+					padding: 0 15rpx;
+					display: flex;
+					justify-content: space-between;
+					border: 1rpx solid $uni-text-color-grey;
+					border-radius: 30rpx;
+					line-height: 60rpx;
+					font-size: 26rpx;
+					margin-top: 5rpx;
+					text{
+						margin-left: 10rpx;
+					}
+				}
+			}
+		}
+		
+		.chart{
+			display: flex;
+			margin-top: 30rpx;
+			.uni-ec-canvas {
+				margin-top: 30rpx;
+				width: 750rpx;
+				height: 400rpx;
+				display: block;
+			}
+		}
+	}
+}

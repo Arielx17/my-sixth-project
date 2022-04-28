@@ -1,0 +1,52 @@
+.content{
+	width: 700rpx;
+	margin: 20rpx auto;
+	navigator{
+		border-radius: 20rpx;
+	}
+	.forms{
+		margin-bottom: 20rpx;
+		.chooseImg{
+			
+		}
+		.imgShow{
+			width: 700rpx;
+			border-radius: 20rpx;
+			
+		}
+		.map{
+			margin-top: 18rpx;
+		}
+		.input-time{
+			width: 170rpx;
+			height: 60rpx;
+			border: 1rpx solid $uni-border-color;
+			float: left;
+			text-align: center;
+			line-height: 60rpx;
+			border-radius: 20rpx;
+			margin-top: 10rpx;
+		}
+		.submitForms{
+			position: fixed;
+			width: 750rpx;
+			bottom: 0;
+			right: 0rpx;
+			border: 1px solid $uni-border-color;
+			border-radius: 20rpx 20rpx 0 0 ;
+			box-shadow: 3px 5px 25px $uni-border-color;
+			background-color: #FFFFFF;
+		
+			.submit{
+				float:right;
+				width: 200rpx;
+				font-size: 25rpx;
+				border-radius: 30rpx;
+				background-color: $uni-topic-color;
+				color: $uni-bg-color-blue;
+				margin: 30rpx;
+			}
+		}
+	}
+	
+}

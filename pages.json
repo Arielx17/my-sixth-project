@@ -1,0 +1,192 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/mine/store/store-edit",
+			"style": {
+				"navigationBarTitleText": "店铺信息编辑",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		
+		
+		{
+			"path": "pages/home/orders-manage",
+			"style": {
+				"navigationBarTitleText": "订单管理"
+			}
+		},
+		{
+			"path": "pages/home/order-detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		// {
+		// 			"path": "pages/mine/wallet/wallet",
+		// 			"style": {
+		// 				"navigationBarTitleText": "钱包"
+		// 			}
+		// 		},
+
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		
+		
+		{
+			"path": "pages/mine/store/store-detail",
+			"style": {
+				"navigationBarTitleText": "店铺信息",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		
+
+
+		{
+			"path": "pages/mine/course/course-list",
+			"style": {
+				"navigationBarTitleText": "课程列表",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/course/course-edit",
+			"style": {
+				"navigationBarTitleText": "课程编辑",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/richtest2",
+			"style": {
+				"navigationBarTitleText": "编辑",
+				"enablePullDownRefresh": false,
+				"usingSwanComponents": {
+					"editor": "dynamicLib://editorLib/editor"
+				}
+			}
+		},
+		{
+			"path": "pages/testrichtext",
+			"style": {
+				"navigationBarTitleText": "编辑",
+				"enablePullDownRefresh": false,
+				"usingSwanComponents": {
+					"editor": "dynamicLib://editorLib/editor"
+				}
+			}
+		},
+		
+		{
+			"path": "pages/statistics/index",
+			"style": {
+				"navigationBarTitleText": "统计"
+			}
+		},
+
+		{
+			"path": "pages/mine/course/course-detail",
+			"style": {
+				"navigationBarTitleText": "课程详情",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/home/extension",
+			"style": {
+				"navigationBarTitleText": "门店推广"
+			}
+		},
+
+		{
+			"path": "pages/home/comments-manage",
+			"style": {
+				"navigationBarTitleText": "评价管理"
+			}
+		},
+		
+		{
+			"path": "pages/activity/index",
+			"style": {
+				"navigationBarTitleText": "活动"
+			}
+		},
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/activity/at-create/at-create",
+			"style": {
+				"navigationBarTitleText": "创建活动",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"navigationStyle": "default"
+	},
+	"tabBar": {
+		"color": "#515151",
+		"selectedColor": "#5A4BE8",
+		"backgroundColor": "#fff",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/home/index",
+				"text": "首页",
+				"iconPath": "./static/icon/warehouse.png",
+				"selectedIconPath": "./static/icon/slt_warehouse.png"
+			},
+			{
+				"pagePath": "pages/statistics/index",
+				"text": "统计",
+				"iconPath": "./static/icon/tradingvolume.png",
+				"selectedIconPath": "./static/icon/slt_tradingvolume.png"
+			},
+			{
+				"pagePath": "pages/message/index",
+				"text": "消息",
+				"iconPath": "./static/icon/messagecenter.png",
+				"selectedIconPath": "./static/icon/slt_messagecenter.png"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"text": "我的",
+				"iconPath": "./static/icon/usercenter.png",
+				"selectedIconPath": "./static/icon/slt_usercenter.png"
+			}
+		]
+
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@/uni_modules/uni-$1/components/uni-$1/uni-$1.vue"
+		}
+	}
+
+}

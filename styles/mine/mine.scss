@@ -1,0 +1,129 @@
+.store{
+	width: 700rpx;
+	height: 300rpx;
+	margin: 20rpx auto;
+	border-radius: 20rpx;
+	background-color: #FFFFFF;
+	.store-info{
+		display: flex;
+		justify-content: space-between;
+		image{
+			width: 120rpx;
+			height: 120rpx;
+			border-radius: 60rpx;
+			margin: 40rpx 30rpx 30rpx 40rpx;
+		}
+		.account{
+			height: 100rpx;
+			width: 370rpx;
+			margin: auto 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.name{
+				font-size: 35rpx;
+				font-weight: bold;
+			}
+			.qualification{
+				padding: 5rpx 10rpx;
+				font-size: 25rpx;
+				width: max-content;
+				border-radius: 20rpx;
+				background-color:#00e2a6;
+				color: #FFFFFF;
+			}
+		}
+		.follow{
+			width: max-content;
+			margin: auto 40rpx auto 0rpx;
+			.num{
+				width: max-content;
+				margin: 0 auto;
+				font-size: 50rpx;
+				font-weight: bold;
+			}
+			.follownum{
+				margin: 0 auto;
+				font-size: 27rpx;
+			}
+		}
+	}
+	.level{
+		padding: 30rpx 50rpx;
+		display: flex;
+		justify-content: space-between;
+		font-size: 25rpx;
+		.recommend{
+			height: 60rpx;
+			width: 200rpx;
+			border-right: 1rpx solid #51515150;
+			display: flex;
+			.rcname{
+				margin: auto 0;
+			}
+			.rcnum{
+				font-size: 37rpx;
+				font-weight: bold;
+				margin: auto 0 auto 10rpx;
+			}
+		}
+		.stars{
+			height: 60rpx;
+			display: flex;
+			.starname{
+				margin: auto 0;
+			}
+			uni-rate{
+				margin: auto 0 auto 10rpx;
+			}
+		}
+	}
+}
+.store-mana{
+	width: 700rpx;
+	height: 220rpx;
+	margin: 20rpx auto;
+	background-color: #FFFFFF;
+	border-radius: 20rpx;
+	.title {
+		font-size: 32rpx;
+		font-weight: bold;
+		display: flex;
+		height: 80rpx;
+		line-height: 80rpx;
+		margin: 30rpx 0 20rpx 35rpx;
+	}
+	uni-grid{
+		color: $uni-text-color;
+		font-size: 25rpx;
+		.grid{
+			color: $uni-text-color;
+			view{
+				margin: 0 auto;
+			}
+			.text{
+				margin: 0 auto;
+				color: $uni-text-color;
+			}
+		}
+	}
+}
+.others{
+	width: 700rpx;
+	height: max-content;
+	margin: 30rpx auto;
+	border-radius: 20rpx;
+	background-color: #FFFFFF;
+	.item{
+		padding: 30rpx 20rpx;
+		display: flex;
+		justify-content: space-between;
+		view{
+			display: flex;
+			view{
+				font-size: 28rpx;
+				margin: auto 0 auto 10rpx;
+			}
+		}
+	}
+}
